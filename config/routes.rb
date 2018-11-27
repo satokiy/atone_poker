@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
+  get 'test/test'
+
+  get 'test/test'
+
   get '/' => "home#top"
 
-  post "home/check" => "home#check"
+  post '/check' => "home#check"
+  put '/check' => "home#check"
+
+  mount PokerApi => '/'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
