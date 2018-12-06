@@ -20,12 +20,20 @@
         <input type="hidden" name="_method" value="put">
         <input type="hidden" name="authenticity_token" value="GE+HMmwejANb7gQw3bipDY273aFOqWxO1nRuIKaht8ASN1fwMFPB58OUlin0dAi9+nx2lqF/DKzBMhmWCQ5U2Q==">
         <!--<p><label for="cards">Cards:</label></p>-->
-        <p><input type="text" name="cards" id="cards" value = <%=session[:cards] %>placeholder="S10 H11 D12 C13 H1"></p>
+        <p><input type="text" name="cards" id="cards" value="<%= @cards %>" placeholder="S10 H11 D12 C13 H1">
+        </p>
         <p><input type="submit" name="commit" value="Check" id="check"></p>
       </form>
     </div>
-    <div id="hand"><p><%= session[:hand] %></p></div>
-    <div class="alert"><p><%=@error %></p></div>
+    <div id="hand"><p><%= @role %></p></div>
+    <div class="alert">
+
+      <p>
+        <% @errors.each do |a| %>
+          <%= a[:message] %>
+          <br>
+
+        <% end %></p></div>
   </div>
   <div id="footer">
     <small>©Copyright 2018 porkerhands All Rights Reserved.</small>

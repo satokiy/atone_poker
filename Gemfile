@@ -51,3 +51,4 @@ end
 
 gem 'grape'
 
+gem 'pry-byebug'
