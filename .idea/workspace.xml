@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4f19b04-7ade-40e9-bb41-693d080c082a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/apis/api/root.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apis/api/ver1/poker_api.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/home_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/home_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/poker_api_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/pokerhands_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test3_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test3_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apis/poker_api.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/test_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/card.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/card.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/pokerhands.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/pokerhands.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/top.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/top.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/services/card_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/services/card_spec.rb" afterDir="false" />
-    </list>
+    <list default="true" id="e4f19b04-7ade-40e9-bb41-693d080c082a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -128,7 +109,7 @@
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="RHTML" value="350" />
           <entry key="RegExp" value="1" />
-          <entry key="Ruby" value="17050" />
+          <entry key="Ruby" value="17053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -138,7 +119,7 @@
           <entry key="Gemfile" value="35" />
           <entry key="Ruby Console" value="4" />
           <entry key="erb" value="350" />
-          <entry key="rb" value="17037" />
+          <entry key="rb" value="17040" />
           <entry key="rspec" value="29" />
         </counts>
       </usages-collector>
@@ -154,8 +135,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/services/card_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+                <state relative-caret-position="246">
+                  <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -306,7 +287,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="718" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -598,12 +579,12 @@
       <workItem from="1542267610828" duration="80144000" />
       <workItem from="1543156460239" duration="34513000" />
       <workItem from="1543391771208" duration="87328000" />
-      <workItem from="1544083798690" duration="10428000" />
+      <workItem from="1544083798690" duration="10764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217863000" />
+    <option name="totallyTimeSpent" value="218199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,10 +596,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="718" height="812" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64" visible="true" weight="0.116595134" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64" visible="true" weight="0.24112426" />
       <window_info id="Structure" order="1" sideWeight="0.105540894" side_tool="true" weight="0.20512821" />
       <window_info id="Favorites" order="2" sideWeight="0.36" side_tool="true" weight="0.14736842" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -866,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/services/card_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" column="89" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+        <state relative-caret-position="246">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
         </state>
       </provider>
     </entry>
