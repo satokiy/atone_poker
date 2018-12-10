@@ -25,7 +25,7 @@ class HomeController < ApplicationController
 
 
     @role = hands.check_role[:role]
-    render ("home/top")
+    render("home/top")
   end
 
 

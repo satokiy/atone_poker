@@ -34,9 +34,7 @@ class Card
 
   #英数字の文字列であることをチェックして、ハッシュで返す
   def check_string
-    if @card.gsub(/\s+/, '') =~ /[^[a-zA-Z0-9]+$]/
-      return @errors[0]
-    end
+    @errors[0] if @card.gsub(/\s+/, '') =~ /[^[a-zA-Z0-9]+$]/
   end
 
   #カード枚数が5枚かチェックして、ハッシュで返す
