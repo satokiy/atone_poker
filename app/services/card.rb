@@ -46,7 +46,7 @@ class Card
     end
   end
 
-  #カード枚数が5枚かチェックして、ハッシュで返す
+  #重複がないかチェックして、ハッシュで返す
   def check_duplication
     if @cardlist.count - @cardlist.uniq.count > 0
       return @errors[3]

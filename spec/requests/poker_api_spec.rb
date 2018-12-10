@@ -21,17 +21,22 @@ describe 'POST /api/ver1/poker_api' do
       post '/api/ver1/poker_api', params2
       expect(response.status).to eq 201
     end
-    it 'レスポンスはresultsとerrorsのキーを持っていること' do
-      post '/api/ver1/poker_api', params1
-      json = JSON.parse(response.body)
-      expect(json).to have_key('results')
-      expect(json).to have_key('errors')
+    context '異常値が含まれる場合' do
+      it 'resultsとerrorsの結果が正しいこと' do
+        post '/api/ver1/poker_api', params1
+        json = JSON.parse(response.body)
+        expect(json['errors'][0]).to have_key('message')
+        expect(json['results'][0]['best']).to eq 'true'
+        expect(json['results'][1]['best']).to eq 'false'
+      end
     end
-    it 'resultsが正しいこと' do
-      post '/api/ver1/poker_api', params2
-      json = JSON.parse(response.body)
-      expect(json["results"][1]["best"]).to eq "true"
-
+    context '正常値のみの場合' do
+      it 'resultsが正しいこと' do
+        post '/api/ver1/poker_api', params2
+        json = JSON.parse(response.body)
+        expect(json['results'][1]["best"]).to eq 'true'
+        expect(json['results'][2]["best"]).to eq 'false'
+      end
     end
   end
 end
