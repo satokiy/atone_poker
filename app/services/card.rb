@@ -27,9 +27,7 @@ class Card
   # end
 
   def blank? #空白チェック
-    if @card.blank?
-      return @errors[1]
-    end
+    @errors[1] if @card.blank?
   end
 
   #英数字の文字列であることをチェックして、ハッシュで返す
@@ -39,16 +37,12 @@ class Card
 
   #カード枚数が5枚かチェックして、ハッシュで返す
   def check_length
-    if @cardlist.length != 5
-      return @errors[4]
-    end
+    @errors[4] if @cardlist.length != 5
   end
 
   #重複がないかチェックして、ハッシュで返す
   def check_duplication
-    if @cardlist.count - @cardlist.uniq.count > 0
-      return @errors[3]
-    end
+    @errors[3] if @cardlist.count - @cardlist.uniq.count > 0
   end
 
   #各カードが正しい値かチェックして、ハッシュの配列で返す
