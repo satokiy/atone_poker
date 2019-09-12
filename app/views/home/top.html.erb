@@ -6,7 +6,7 @@
   <meta name="csrf-param" content="authenticity_token">
   <meta name="csrf-token" content="RtHoNU7iIgV5gbAWKQ1xNdwzek56YPKgxspnZRcNWTlMqTj3Eq9v4eH7Ig8AwdCFq/TReZW2kkLRjBDTuKK6IA==">
 </head>
-<body data-__gyazo-extension-added-paste-support="true">
+<body>
 
 <div id="wrapper">
   <div id="header">
@@ -15,15 +15,12 @@
   </div>
   <div id="contents">
     <div id="form">
-      <form action="/check" accept-charset="UTF-8" method="post">
-        <input name="utf8" type="hidden" value="✓">
-        <input type="hidden" name="_method" value="put">
-        <input type="hidden" name="authenticity_token" value="GE+HMmwejANb7gQw3bipDY273aFOqWxO1nRuIKaht8ASN1fwMFPB58OUlin0dAi9+nx2lqF/DKzBMhmWCQ5U2Q==">
-        <!--<p><label for="cards">Cards:</label></p>-->
-        <p><input type="text" name="cards" id="cards" value="<%= @cards %>" placeholder="S10 H11 D12 C13 H1">
-        </p>
-        <p><input type="submit" name="commit" value="Check" id="check"></p>
-      </form>
+      <%= form_tag('/check', :method => :post) do %>
+      <!--<p><label for="cards">Cards:</label></p>-->
+      <p><input type="text" name="cards" id="cards" value="<%= @cards %>" placeholder="S10 H11 D12 C13 H1">
+      </p>
+      <p><input type="submit" name="commit" value="Check" id="check"></p>
+      <% end %>
     </div>
     <div id="hand"><p><%= @role %></p></div>
     <div class="alert">
@@ -39,7 +36,7 @@
     <small>©Copyright 2018 porkerhands All Rights Reserved.</small>
   </div>
 </div>
-
+テスト
 
 </body>
 </html>

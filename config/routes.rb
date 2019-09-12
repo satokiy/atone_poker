@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   get '/' => "home#top"
   get '/check' => "home#top"
   post '/check' => "home#check"
-  put '/check' => "home#check"
 
   mount API::Root => '/'
 

@@ -29,7 +29,10 @@ module API
               hash[:errors] << hands.blank?
 #異常値の場合errors配列にエラーを入れて返す
             elsif hands.validation
-              hash[:errors] = hands.validation
+              array = hands.validation
+              array.each do |item|
+                hash[:errors] << item
+              end
               hash[:errors] << {cards: card}
 #正常値の場合results配列に役を入れて返す
             else
@@ -39,7 +42,6 @@ module API
               hash[:results] << aaa
             end
           end
-
 #正常値に対してscoreの強弱判定bestをtrue/falseでつける
           hash[:results].each do |a|
             if a[:score] == score_results.max
