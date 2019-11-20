@@ -26,8 +26,10 @@ class Card
   #   @cardlist
   # end
 
+
   def blank? #空白チェック
     @errors[1] if @card.blank?
+  p "AA"
   end
 
   #英数字の文字列であることをチェックして、ハッシュで返す
